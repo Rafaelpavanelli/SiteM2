@@ -1,0 +1,106 @@
+@import './../VariaveisGlobais.module.scss';
+.nav{
+  font-family: 'Roboto Mono','Sans-serif';
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0px 5vw;
+  height: 10vh;
+  h3{
+    letter-spacing: 5px;
+  }
+  ul{
+    display: flex;
+    margin-right: 15vw;
+    align-items: center;
+    font-family: 'Roboto Mono','Sans-serif';
+    li{
+      margin: 0px 1vw;
+      list-style: none;
+      a{
+        text-decoration: none;
+        color: rgb(59, 59, 59);
+        letter-spacing: 2px;
+    
+        border-bottom: hidden;
+        &:hover{
+          transition: 1s ease-in-out;
+          border-bottom: 1px solid black;
+        }
+      }
+     
+    }
+    select{
+      width: 8vw;
+      height: 5vh;
+      margin-left: 2vh;
+      font-size: 1.1rem;
+      color: rgb(97, 97, 97);
+      #pt,#in{
+        border-radius: none;
+      }
+    }
+    
+  }
+  .toggle{
+    display: none;
+    padding: 1vh;
+    z-index: 2;
+    background-color: transparent;
+    border: hidden;
+    font-size: 1.2rem;
+  }
+  @include Mobile{ 
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 10% 0px 2vw;
+    margin: 0px;
+    h3{
+      font-size: 1em;
+      margin-left: 2vw;
+      letter-spacing: 1px;
+    }
+    .nav_menu{
+      z-index: 1;
+      justify-content: space-around;
+      position: fixed;
+      top: 7vh;
+      right: -20vh;
+      width: 50%;
+      height: 40vh;
+      background-color: white;
+      flex-direction: column;
+      transform: translateX(100%);
+      transition: 0.4s ease-in-out;
+    }
+    .toggle{
+      display: block;
+      padding-left: 30%;
+    }
+    .active{
+      z-index: 1;
+      justify-content: space-around;
+      transition: 0.4s ease-in-out;
+      position: fixed;
+      top: 7vh;
+      right: -20vh;
+      width: 70%;
+      padding-right: 10vh;
+      height: 40vh;
+      background-color: white;
+      flex-direction: column;
+      transform: translateX(0);
+      font-size: 1.2rem;
+      select{
+        width: 20vw;
+      }
+    }
+    .toggle{
+      display: block;
+    }
+   
+   
+   }
+  
+  
+}

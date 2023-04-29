@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap");
+.nav {
+  font-family: "Roboto Mono", "Sans-serif";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 5vw;
+  height: 10vh;
+}
+.nav h3 {
+  letter-spacing: 5px;
+}
+.nav ul {
+  display: flex;
+  margin-right: 15vw;
+  align-items: center;
+  font-family: "Roboto Mono", "Sans-serif";
+}
+.nav ul li {
+  margin: 0px 1vw;
+  list-style: none;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: rgb(59, 59, 59);
+  letter-spacing: 2px;
+  border-bottom: hidden;
+}
+.nav ul li a:hover {
+  transition: 1s ease-in-out;
+  border-bottom: 1px solid black;
+}
+.nav ul select {
+  width: 8vw;
+  height: 5vh;
+  margin-left: 2vh;
+  font-size: 1.1rem;
+  color: rgb(97, 97, 97);
+}
+.nav ul select #pt, .nav ul select #in {
+  border-radius: none;
+}
+.nav .toggle {
+  display: none;
+  padding: 1vh;
+  z-index: 2;
+  background-color: transparent;
+  border: hidden;
+  font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 10% 0px 2vw;
+    margin: 0px;
+  }
+  .nav h3 {
+    font-size: 1em;
+    margin-left: 2vw;
+    letter-spacing: 1px;
+  }
+  .nav .nav_menu {
+    z-index: 1;
+    justify-content: space-around;
+    position: fixed;
+    top: 7vh;
+    right: -20vh;
+    width: 50%;
+    height: 40vh;
+    background-color: white;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 0.4s ease-in-out;
+  }
+  .nav .toggle {
+    display: block;
+    padding-left: 30%;
+  }
+  .nav .active {
+    z-index: 1;
+    justify-content: space-around;
+    transition: 0.4s ease-in-out;
+    position: fixed;
+    top: 7vh;
+    right: -20vh;
+    width: 70%;
+    padding-right: 10vh;
+    height: 40vh;
+    background-color: white;
+    flex-direction: column;
+    transform: translateX(0);
+    font-size: 1.2rem;
+  }
+  .nav .active select {
+    width: 20vw;
+  }
+  .nav .toggle {
+    display: block;
+  }
+}/*# sourceMappingURL=Navbar.module.css.map */

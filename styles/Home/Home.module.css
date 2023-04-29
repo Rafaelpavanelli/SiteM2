@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap");
+.main {
+  height: 100vh;
+}
+.main .text {
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  color: white;
+  letter-spacing: 10px;
+  text-align: center;
+  font-weight: 100;
+}
+.main .text h1 {
+  color: white;
+  font-weight: 100;
+}
+.main .text h2 {
+  margin-top: 20px;
+  width: auto;
+  font-weight: 100;
+}
+.main .text h2 span {
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .main .video {
+    display: none;
+  }
+  .main .text {
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 2vw;
+    top: 20%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    position: initial;
+  }
+  .main .text h1 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: black;
+  }
+  .main .text h2 {
+    margin-top: 10px;
+    font-size: 0.4rem;
+    width: 70%;
+    letter-spacing: 2px;
+  }
+}/*# sourceMappingURL=Home.module.css.map */
