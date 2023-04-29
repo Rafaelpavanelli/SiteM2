@@ -6,9 +6,14 @@
   align-items: center;
   padding:0px 5vw;
   height: 10vh;
-  h3{
-    letter-spacing: 5px;
+  a{
+    text-decoration: none;
+    color: black;
+    h3{
+      letter-spacing: 5px;
+    }
   }
+  
   ul{
     display: flex;
     margin-right: 15vw;

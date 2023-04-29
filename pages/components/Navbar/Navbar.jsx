@@ -10,11 +10,11 @@ export default function Navbar(){
   }
   return (
     <nav className={style.nav}>
-      <h3>M2 software labs</h3>
+      <Link href={'/'}><h3>M2 software labs</h3></Link>
       <ul className={!toggle? style.active:style.nav_menu}>
       
-        <li className={style.nav_item}><Link href={'/'}>Produtos</Link></li>
-        <li className={style.nav_item}><Link href={'/'}>Sobre</Link></li>
+        <li className={style.nav_item}><Link href={'/'} onClick={()=>handleClick()}>Produtos</Link></li>
+        <li className={style.nav_item}><Link href={'/about'} onClick={()=>handleClick()}>Sobre</Link></li>
         <select name="language" id="language" className={style.nav_item}>
           <option value="pt-br" id='pt'>PT</option>
           <option value="en-us" id='in'>IN</option>
