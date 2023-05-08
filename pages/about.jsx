@@ -20,7 +20,7 @@ export default function About(){
         setText(lang.Languages.PT.index)
         break;
     }
-  },[])
+  },[select])
   console.log()
   return(
     <>
