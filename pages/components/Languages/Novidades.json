@@ -1,0 +1,21 @@
+{
+  "Languages":{
+    "PT":{
+      "index":{
+      "title":"QR Horse",
+      "text1":"Chega de precisar anotar o nome de cada um de seus cavalos, deixe-os muito mais organizados.",
+      "text2":"Mostre seus cavalos e deixe que as pessoas o veja através de um QR code aonde será redirecionado a todas as informações de seu garanhão ",
+      "button1":"Saiba mais "
+      }
+  },
+  "IN":{
+    "index":{
+      "title":"QR Horse",
+      "text1":"No more needing to write down the name of each of your horses, make them much more organized.",
+      "text2":"Show your horses and let people see you through a QR code where you will be redirected to all your stallion information",
+      "button1":"see more "
+      }
+  }
+   
+}
+}

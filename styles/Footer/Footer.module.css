@@ -1,1 +1,46 @@
-/*# sourceMappingURL=Footer.module.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap");
+.Footer {
+  border-top: 1px solid rgb(227, 227, 227);
+  display: flex;
+  height: auto;
+  padding: 0px 20px;
+  margin: 2vh 0px;
+  align-items: center;
+  font-size: 0.8rem;
+  justify-content: space-between;
+}
+.Footer a {
+  text-decoration: none;
+  color: black;
+  border-bottom: none;
+  transition: 1s ease-in-out;
+}
+.Footer a:hover {
+  border-bottom: 1px solid black;
+}
+.Footer ul li {
+  margin: 10px 0px;
+  list-style: none;
+}
+.Footer .redes {
+  display: flex;
+}
+.Footer .redes li a:hover {
+  border-bottom: none;
+}
+.Footer .redes:hover {
+  border-bottom: none;
+}
+.Footer .redes svg {
+  font-size: 1.5rem;
+  margin: 0px 10px;
+}
+@media (max-width: 768px) {
+  .Footer {
+    font-size: 0.6rem;
+    flex-wrap: wrap;
+    margin: 0px;
+  }
+}/*# sourceMappingURL=Footer.module.css.map */

@@ -1,0 +1,33 @@
+{
+  "Languages":{
+    "PT":{
+      "index":{
+        "title1":"Nossa História",
+        "subtitle1":"Depois de algumas tentativas em iniciar uma empresa de tecnologia, em 2022 finalmente conseguimos, E nas próximas linhas escreveremos nossa história, e queremos você nela.",
+        "subtitle2":"NOSSA MISSÃO",
+        "h2":"Pequenas soluções",
+        "h22":"Grandes impactos",
+        "text1":" Não é impossível viver sem a tecnologia digital, mas você gostaria ?",
+        "text2": "A tecnologia é como um super poder, com ela conseguimos realizar façanhas que outrora só existia em nossas mentes, em formato de ideias .",
+        "text3": "M2 Software Labs é uma empresa focada em criar soluções simples, mas com grandes impactos , só uma bela ideia torna isso possível.",
+        "text4": "Qual é a sua bela ideia ?"
+
+      }
+  },
+  "IN":{
+    "index":{
+      "title1":"Our story",
+      "subtitle1":"After some attempts to start a technology company, in 2022 we finally made it, and in the next few lines we will write our story, and we want you in it.",
+      "subtitle2":"OUR MISSION",
+      "h2":"small solutions",
+      "h2-2":"big impacts",
+      "text1":" It's not impossible to live without digital technology, but would you like it?",
+      "text2": "Technology is like a super power, with it we can accomplish feats that once only existed in our minds, in the form of ideas.",
+      "text3": "M2 Software Labs is a company focused on creating simple solutions, but with great impacts, only a beautiful idea makes this possible.",
+      "text4": "What is your beautiful idea ?"
+
+    }
+  }
+   
+}
+}

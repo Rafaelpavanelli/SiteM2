@@ -1,30 +1,53 @@
 import Image from "next/image";
+import { useState,useContext,useEffect } from "react";
+import { langContext } from './components/Context/Lang';
+import lang from './components/Languages/about.json';
+import Head from "next/head";
 import Link from "next/link";
 import style from '../styles/About/About.module.scss';
+import Footer from "./components/Footer/Footer";
 export default function About(){
+  const[text,setText]=useState({});
+  const{select}=useContext(langContext);
+  console.log(select)
+  console.log(text)
+  useEffect(()=>{
+    switch(select){
+      case "IN" :
+        setText(lang.Languages.IN.index)
+        break;
+        case "PT" :
+        setText(lang.Languages.PT.index)
+        break;
+    }
+  },)
+  console.log()
   return(
+    <>
     <div className={style.about}>
-      <Link href={'/'}>Voltar</Link>
+      <Head>
+        <title>About</title>
+      </Head>
     <div className={style.history} data-aos="fade">
-      <h1>Nossa História</h1>
-      <p>Depois de algumas tentativas em iniciar uma empresa de tecnologia, em 2022 finalmente conseguimos.<br/>
-          E nas próximas linhas escreveremos nossa história, e queremos você nela.</p>
+      <h1>{text.title1}</h1>
+      <p>{text.subtitle1}</p>
     </div>
     <div className={style.card}>
     <div className={style.mission} data-aos="fade-right">
-      <h4>NOSSA MISSÃO</h4>
-      <h2 id={style.first}>Pequenas soluções</h2>
-      <h2 id={style.second}>Grandes impactos</h2>
-      <p> Não é impossível viver sem a tecnologia digital, mas você gostaria ?</p>
-      <p>A tecnologia é como um super poder,
-        com ela conseguimos realizar façanhas que outrora só existia em nossas mentes, em formato de <span>ideias</span> .</p>
-      <p>M2 Software Labs é uma empresa focada em criar <span>soluções simples, mas com grandes impactos</span> , só uma bela ideia torna isso possível. </p>
-      <p>Qual é a sua bela ideia ?</p>
+      <h4>{text.subtitle2}</h4>
+      <h2 id={style.first}>{text.h2}</h2>
+      <h2 id={style.second}>{text.h22}</h2>
+      <p> {text.text1}</p>
+      <p>{text.text2}</p>
+      <p>{text.text3}</p>
+      <p>{text.text4}</p>
     </div>
     <div className="image" data-aos="fade-left">
       <Image src={'/images/image-about.webp'} width={300} height={400} alt="Imagem "/>
     </div>
     </div>
     </div>
+    <Footer />
+    </>
   )
 }

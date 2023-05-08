@@ -1,6 +1,7 @@
 import Navbar from "./Navbar/Navbar";
-import Footer from "./Footer/Footer";
+import {LangProvider} from "./Context/Lang";
 import Head from "next/head";
+import style from '../../styles/Layout/Layout.module.scss'
 import { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
@@ -9,7 +10,8 @@ export default function Layout({children}){
     Aos.init({duration:1500})
   },[])
   return(
-    <div > 
+    <LangProvider>
+    <div className={style.container}> 
       <Head>
         <title>M2 Software</title>
         <link rel="shortcut icon" href='/images/favicon.ico' />
@@ -18,6 +20,7 @@ export default function Layout({children}){
     <Navbar data-aos="fade-up"/>
     <main className="main-container">{children}</main>
     </div>
+    </LangProvider>
   )
 
 }

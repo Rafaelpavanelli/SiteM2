@@ -1,1 +1,49 @@
-
+@import '../VariaveisGlobais.module.scss';
+.Footer{
+  border-top: 1px solid rgb(227, 227, 227);
+  display: flex;
+  height: auto;
+  padding: 0px 20px;
+  margin: 2vh 0px;
+  align-items: center;
+  font-size: 0.8rem;
+  justify-content: space-between;
+  a{
+    text-decoration: none;
+    color: black;
+    border-bottom: none;
+    transition: 1s ease-in-out;
+    &:hover{
+      border-bottom: 1px solid black;
+    }
+  }
+  ul{
+    li{
+      margin: 10px 0px;
+      list-style: none;
+     
+    }
+  }
+  .redes{
+    display: flex;
+    li{
+      a{
+        &:hover{
+          border-bottom: none;
+        }
+      }
+    }
+    &:hover{
+      border-bottom: none;
+    }
+    svg{
+      font-size: 1.5rem;
+      margin: 0px 10px;
+    }
+  }
+  @include Mobile{
+    font-size: 0.6rem;
+    flex-wrap: wrap;
+    margin: 0px;
+  }
+}

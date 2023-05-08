@@ -9,7 +9,11 @@
   padding: 0px 5vw;
   height: 10vh;
 }
-.nav h3 {
+.nav a {
+  text-decoration: none;
+  color: black;
+}
+.nav a h3 {
   letter-spacing: 5px;
 }
 .nav ul {

@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap");
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+  margin-bottom: 20vh;
+}
+.about a {
+  text-align: start;
+  transform: translateX(-40vw);
+  padding: 1vh;
+  border: 1px solid black;
+  border-radius: 3px;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  transition: 0.2s ease-in-out;
+}
+.about a:hover {
+  transition: 0.2s ease-in-out;
+  background-color: black;
+  color: white;
+}
+.about .history {
+  width: 90vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.about .history h1 {
+  font-size: 3rem;
+  font-weight: 200;
+  font-family: "sans-serif";
+  letter-spacing: 3px;
+  margin-bottom: 3vh;
+}
+.about .history p {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 70vw;
+  color: rgb(52, 52, 52);
+}
+.about .card {
+  margin-top: 3vh;
+  display: flex;
+  justify-content: space-around;
+}
+.about .card .mission {
+  width: 40vw;
+  margin-right: 20vh;
+  border-left: 1px solid rgb(79, 79, 79);
+  padding-left: 1vw;
+}
+.about .card .mission h4 {
+  font-weight: 200;
+  font-size: 1rem;
+  color: rgb(16, 16, 16);
+  margin-bottom: 2vh;
+}
+.about .card .mission #first {
+  font-weight: 100;
+  color: rgb(35, 35, 35);
+  font-family: "Roboto";
+  border-left: 2px solid black;
+  padding-left: 4vh;
+  transform: translateX(-15px);
+}
+.about .card .mission #second {
+  font-family: "Roboto";
+  font-weight: 400;
+  margin-bottom: 4vh;
+  font-size: 2rem;
+  border-left: 2px solid black;
+  padding-left: 4vh;
+  transform: translateX(-15px);
+}
+.about .card .mission p {
+  color: rgb(55, 55, 55);
+  font-size: 1.5rem;
+  margin: 10px 0px;
+  margin-left: 10px;
+}
+.about .card .mission p span {
+  font-weight: 700;
+}
+.about .card .mission p:nth-child(4):before {
+  content: '"';
+}
+.about .card .mission p:nth-child(7) {
+  text-align: end;
+  font-weight: 600;
+  color: black;
+}
+.about .card .mission p:nth-child(7):after {
+  content: ' "';
+}
+@media (max-width: 768px) {
+  .about a {
+    position: fixed;
+    top: 50px;
+    border: 1px solid rgb(174, 174, 174);
+    color: rgb(103, 103, 103);
+  }
+  .about .card {
+    flex-direction: column;
+  }
+  .about .card .mission {
+    margin-top: 10vh;
+    width: 100vw;
+    margin-right: 0px;
+    text-align: center;
+    border-left: none;
+    border-top: 1px solid rgb(63, 63, 63);
+    border-bottom: 1px solid rgb(66, 66, 66);
+    padding: 5vh;
+    margin-bottom: 120px;
+  }
+  .about .card .mission #first, .about .card .mission #second {
+    border-left: hidden;
+  }
+  .about .card .mission #second {
+    width: 85vw;
+  }
+  .about .card .mission p:nth-child(7) {
+    text-align: end;
+    font-weight: 600;
+    color: black;
+    font-size: 1rem;
+  }
+  .about .card img {
+    display: none;
+  }
+}/*# sourceMappingURL=About.module.css.map */
