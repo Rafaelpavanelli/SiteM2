@@ -19,7 +19,7 @@ export default function Home(){
         setText(lang.Languages.PT.index)
         break;
     }
-  })
+  },[])
   return(
     <div className={style.main} data-aos='fade-q  eight'>
       <video className={style.video} width='100%' src='/images/background.mov' autoPlay loop muted>
