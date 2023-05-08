@@ -2,7 +2,7 @@ import style from './../styles/Home/Home.module.scss';
 import Footer from './components/Footer/Footer';
 import { useState,useContext,useEffect } from 'react';
 import { langContext } from './components/Context/Lang';
-import lang from './components/Languages/index.json';
+import lang from './components/Languages/Home.json';
 import Novidades from './components/Novidades/Novidades';
 
 export default function Home(){
